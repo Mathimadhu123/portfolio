@@ -9,7 +9,7 @@ function About() {
           {/* Image */}
           <Col md={5} className="text-center">
             <img
-              src="src/assets/me.png"
+              src="me.png"
               alt="Madhumathi"
               className="img-fluid rounded-4 shadow about-img"
               style={{ maxWidth: "420px" }}
