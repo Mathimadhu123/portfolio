@@ -1,0 +1,16 @@
+.project-title {
+  font-size: 2.4rem;
+  color: black; /* Title in black */
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.project-underline {
+  width: 80px;
+  height: 4px;
+  background-color: #046288;
+  margin: 0 auto 30px;
+  border-radius: 4px;
+}

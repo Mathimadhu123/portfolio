@@ -3,30 +3,28 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-
-
 function Header() {
     return (
-        <div className='fixNav'>
-            <Navbar expand="lg" className="bg-body-tertiary p-2  ">
+        <header className="sticky-top shadow-sm">
+            <Navbar expand="lg" className="custom-navbar py-3">
                 <Container>
-                    <Navbar.Brand href="#home" ><h2 className='text-secondary'>Portfolio</h2></Navbar.Brand>
+                    <Navbar.Brand href="#home" className="brand-title">
+                        <h2 className="m-0">Portfolio</h2>
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
-                        <Nav className='fw-bold' >
-                            <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href="#link">About Me</Nav.Link>
-                            <Nav.Link href="#link">Projects</Nav.Link>
-                            <Nav.Link href="#link">Skills</Nav.Link>
-                            <Nav.Link href="#link">Resume</Nav.Link>
-                            <Nav.Link href="#link">Contact Me</Nav.Link>
-
-
+                    <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+                        <Nav className="text-center">
+                            <Nav.Link href="#home" className="nav-link-custom">Home</Nav.Link>
+                            <Nav.Link href="#about" className="nav-link-custom">About Me</Nav.Link>
+                            <Nav.Link href="#projects" className="nav-link-custom">Projects</Nav.Link>
+                            <Nav.Link href="#skills" className="nav-link-custom">Skills</Nav.Link>
+                            <Nav.Link href="#resume" className="nav-link-custom">Resume</Nav.Link>
+                            <Nav.Link href="#contact" className="nav-link-custom">Contact</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </div>
+        </header>
     );
 }
 

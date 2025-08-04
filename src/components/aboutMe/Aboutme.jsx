@@ -1,40 +1,49 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import "./aboutme.css";
 
 function About() {
-    return (
-        <section className="d-flex py-5 justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
-            <Container>
-                <Row className="align-items-center ">
-                    {/* Image Column */}
-                    <Col md={4} className="text-center">
-                        <img 
-                            src="src/assets/me.png" 
-                            alt="Loading..." 
-                            className="img-fluid" 
-                            style={{ width: "380px", height: "auto" }} 
-                        />
-                    </Col>
+  return (
+    <section id="about" className="about-section py-5 d-flex align-items-center">
+      <Container>
+        <Row className="align-items-center g-5">
+          {/* Image */}
+          <Col md={5} className="text-center">
+            <img
+              src="src/assets/me.png"
+              alt="Madhumathi"
+              className="img-fluid rounded-4 shadow about-img"
+              style={{ maxWidth: "420px" }}
+            />
+          </Col>
 
-                    {/* Text Column */}
-                    <Col md={8} className="text-md-start">
-                        <h2>About Me</h2>
-                        <p style={{ fontSize: '1.2rem', lineHeight: '1.5' }}>
-                            Hi, I’m Madhumathi – an aspiring <b>MERN Stack Developer</b> driven by a passion for technology and solving real-world problems. I specialize in building dynamic and responsive web applications using <b>JavaScript, React, Node.js, and MongoDB.</b>
-                        </p>
-                        <p style={{ fontSize: '1.2rem', lineHeight: '1.5' }}>
-                            With hands-on experience in full-stack development, I’ve worked on projects ranging from interactive <b>quiz applications</b> to visually stunning websites. I am always learning, constantly exploring new frameworks, and pushing the limits of my creativity.
-                        </p>
-                        <p style={{ fontSize: '1.2rem', lineHeight: '1.5' }}>
-                            In addition to coding, I enjoy sharing my knowledge through teaching and mentoring others. I believe in creating beautiful, intuitive user experiences and thrive on bringing ideas to life.
-                        </p>
-                        <p style={{ fontSize: '1.2rem', lineHeight: '1.5' }}>
-                            Let’s collaborate and build something amazing together!
-                        </p>
-                    </Col>
-                </Row>
-            </Container>
-        </section>
-    );
+          {/* Text */}
+          <Col md={7}>
+          
+
+            <p className="about-paragraph mb-3">
+              A passionate <strong>MERN Stack Developer</strong> who turns ideas into interactive, scalable, and meaningful digital experiences.
+            </p>
+            <p className="about-paragraph mb-3">
+              I specialize in modern web development using <strong>React, Node.js, Express</strong>, and <strong>MongoDB</strong>. From intuitive UIs to clean backend logic, I enjoy crafting full-stack applications that solve real problems.
+            </p>
+            <p className="about-paragraph mb-3">
+              I've built <strong>Quiz Applications</strong> and <strong>Job Portals</strong> with a focus on functionality, responsiveness, and user experience.
+            </p>
+            <p className="about-paragraph mb-3">
+              I also enjoy <strong>mentoring others</strong> and working with tools like <strong>Figma, Canva</strong>, and <strong>Photoshop</strong> to create engaging UI/UX designs.
+            </p>
+            <p className="about-paragraph">
+              Always curious. Always building. Let’s create something awesome together!
+            </p>
+
+            <Button href="#contact" variant="outline-primary" className="mt-4 shadow-sm">
+              Let’s Connect
+            </Button>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+  );
 }
 
 export default About;

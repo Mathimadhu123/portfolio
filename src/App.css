@@ -43,3 +43,6 @@
   background-color: #022446;
   color: rgb(243, 240, 240);
 }
+html {
+  scroll-behavior: smooth;
+}

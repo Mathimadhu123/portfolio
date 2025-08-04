@@ -1,3 +1,32 @@
-.body{
-    background-color: rgb(251, 253, 255);
+.home-section {
+  background: linear-gradient(135deg, #e3f2fd, #f1f8e9); /* same gradient */
+  padding: 8px 0; /* Enough for spacing but not too tall */
+  min-height: auto; /* Let the height be based on content */
+}
+
+
+.home-title {
+  font-size: 2.5rem;
+  position: relative;
+}
+
+.home-underline {
+  width: 80px;
+  height: 4px;
+  background-color:  #046288;
+  margin:  auto 30px;
+  border-radius: 2px;
+}
+.txt{
+ color:  #046288;
+}
+.home-card {
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.85);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }

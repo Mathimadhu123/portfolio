@@ -1,14 +1,47 @@
-nav{
-    display: flex;
-    justify-content: space-between;
+/* Elegant Glassy Navbar */
+.custom-navbar {
+  background: linear-gradient(135deg, #e3f2fdcc, #f1f8e9cc);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid #dee2e6;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease;
+  font-family: 'Segoe UI', sans-serif;
 }
-.fixNav{ 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; 
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+
+/* Brand Title */
+.brand-title h2 {
+  color: #046288;
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* Nav Links */
+.nav-link-custom {
+  color: #046288 !important;  /* Fix black issue */
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin: 0 12px;
+  padding: 8px 16px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+}
+
+/* Smooth hover with lighter background and soft scale */
+.nav-link-custom:hover,
+.nav-link-custom:focus {
+  background-color: rgba(4, 98, 136, 0.2); /* subtle highlight */
+  color: #046288 !important;
+  transform: scale(1.03);
+  text-decoration: none;
+}
+
+/* Mobile Spacing */
+@media (max-width: 991px) {
+  .nav-link-custom {
+    margin-bottom: 10px;
+  }
 }

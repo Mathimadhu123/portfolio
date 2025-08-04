@@ -32,42 +32,56 @@
 // export default Contact;
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { FaEnvelope, FaGlobe, FaGithub, FaLinkedin } from 'react-icons/fa';
 import './Contact.css';
 
 const Contact = () => {
-    return (
-        <section className="contact-section d-flex align-items-center justify-content-center vh-100">
-           <Container className="text-center">
-        {/* Title */}
+  return (
+    <section id="contact" className="contact-section d-flex align-items-center justify-content-center vh-100">
+      <Container className="text-center">
+        {/* Heading */}
         <Row className="mb-4">
           <Col>
-            <h2 className="fw-bold">Contact Me</h2>
+            <h2 className="fw-bold contact-title">Contact Me</h2>
+            <div className="underline"></div>
           </Col>
         </Row>
 
-        {/* Description */}
-        <Row className="mb-3">
+        {/* Tagline */}
+        <Row className="mb-4">
           <Col md={8} className="mx-auto">
-            <p className="fs-5">
-              Need a MERN Stack Developer to bring your idea to life? I’m available for freelance, collaboration, or full-time opportunities.
+            <p className="fs-5 text-muted">
+              Need a MERN Stack Developer to bring your idea to life? I’m open to freelance work, collaborations, or full-time roles.
             </p>
           </Col>
         </Row>
 
-        {/* Contact Info */}
+        {/* Contact Card */}
         <Row className="justify-content-center">
-          <Col md={6}>
-            <p><strong>📩 Email:</strong> <a href="mailto:madhumathi1310@gmail.com" className="text-decoration-none">madhumathi1310@gmail.com</a></p>
-            <p><strong>🌍 Website:</strong> <a href="#" className="text-decoration-none">[Your Portfolio]</a></p>
-            <p><strong>🖥 GitHub:</strong> <a href="https://github.com/Mathimadhu123/" target="_blank" className="text-decoration-none">GitHub</a></p>
-            <p><strong>💼 LinkedIn:</strong> <a href="https://www.linkedin.com/in/madhumathi-p-930a261ba/" target="_blank" className="text-decoration-none">LinkedIn</a></p>
+          <Col md={6} lg={5}>
+            <div className="contact-card p-4 shadow-sm rounded-4 bg-white bg-opacity-75">
+              <p className="mb-3">
+                <FaEnvelope className="me-2 text-primary" />
+                <strong>Email:</strong> <a href="mailto:madhumathi0630@gmail.com" className="text-dark text-decoration-none">madhumathi0630@gmail.com</a>
+              </p>
+              <p className="mb-3">
+                <FaGlobe className="me-2 text-success" />
+                <strong>Website:</strong> <a href="#" className="text-dark text-decoration-none">[Your Portfolio]</a>
+              </p>
+              <p className="mb-3">
+                <FaGithub className="me-2 text-dark" />
+                <strong>GitHub:</strong> <a href="https://github.com/Mathimadhu123/" target="_blank" rel="noreferrer" className="text-dark text-decoration-none">GitHub</a>
+              </p>
+              <p className="mb-0">
+                <FaLinkedin className="me-2 text-info" />
+                <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/madhumathi-p-930a261ba/" target="_blank" rel="noreferrer" className="text-dark text-decoration-none">LinkedIn</a>
+              </p>
+            </div>
           </Col>
         </Row>
       </Container>
-
-
-        </section>
-    );
+    </section>
+  );
 };
 
 export default Contact;

@@ -1,0 +1,31 @@
+.contact-title {
+  font-size: 2.4rem;
+  color: black; /* Title in black */
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background-color: #046288;
+  margin: 0 auto 30px;
+  border-radius: 4px;
+}
+
+.contact-card {
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.85);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section {
+  background: linear-gradient(135deg, #e3f2fd, #f1f8e9);
+}

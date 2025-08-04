@@ -1,0 +1,24 @@
+.about-section {
+  background: linear-gradient(135deg, #e3f2fd, #f1f8e9);
+  min-height: 100vh;
+}
+
+.about-img {
+  border-radius: 16px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background-color: #046288;
+  border-radius: 2px;
+}
+
+.about-paragraph {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
